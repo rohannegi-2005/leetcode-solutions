@@ -1,8 +1,5 @@
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
-
-        hour = 0
-        total_hour = 0
         low = 1
         high = max(piles)
         def calculate(k):
@@ -11,7 +8,6 @@ class Solution:
                 hour = (pile + k - 1) // k
                 total_hour = total_hour + hour
 
-            # print(total_hour)
             return total_hour
                 
 
