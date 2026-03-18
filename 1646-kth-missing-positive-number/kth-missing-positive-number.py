@@ -23,7 +23,6 @@ class Solution:
         while low <= high:
             mid = (low + high) // 2
 
-            # missing numbers till index mid
             missing = arr[mid] - (mid + 1)
 
             if missing < k:
