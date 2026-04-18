@@ -10,14 +10,11 @@ class Solution:
             return length
 
         while y < length:
-            print(f"y:{y}")
-            print(f"x+count:{x+count}")
-
+            
             if s[y] not in s[x:x+count]:
                 count = count + 1
                 y = y + 1
                 max_len = max(max_len, count)
-                print(f"count:{count}")
             else:
                 idx = s[x:x+count].index(s[y])
                 x = x + idx + 1
