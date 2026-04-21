@@ -7,9 +7,7 @@ class Solution:
             else:
                 nums[i] = 1
 
-        print(nums)
-
-        prefix_map = {0: 1}   # prefix_sum → frequency
+        prefix_map = {0: 1}   
         current_sum = 0
         count = 0
 
