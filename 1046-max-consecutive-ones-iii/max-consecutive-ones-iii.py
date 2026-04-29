@@ -7,9 +7,6 @@ class Solution:
         j = 0
         max_count = 0
         for i in range(0,length):
-            # print(f"i:{i}")
-            # print(f"zero_index:{zero_index}")
-            # print(f"zero count:{zero}")
             if nums[i] == 1 :
                 count = i - j + 1
             if nums[i] == 0:
