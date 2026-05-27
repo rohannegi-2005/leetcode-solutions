@@ -17,7 +17,10 @@ class Solution:
             if (current_sum - k) in prefix_map:
                 count += prefix_map[current_sum - k]
 
-            prefix_map[current_sum] = prefix_map.get(current_sum, 0) + 1
+            if current_sum in prefix_map:
+                prefix_map[current_sum] += 1
+            else:
+                prefix_map[current_sum] = 1
 
         return count
         
