@@ -1,6 +1,7 @@
+from collections import deque
 class Solution:
     def asteroidCollision(self, asteroids: List[int]) -> List[int]:
-        stack = []
+        stack = deque()
         n = len(asteroids)
 
         for i in range(n):
@@ -14,5 +15,5 @@ class Solution:
                 if asteroids[i] * (-1) == stack[-1] > 0:
                     stack.pop()
 
-        return stack
+        return list(stack)
               
