@@ -16,7 +16,7 @@ class Solution:
                 idx = stack.pop()
                 next_smaller[idx] = i
             stack.append(i)
-        print(next_smaller)
+        # print(next_smaller)
 
         stack = deque()
         for i in range(n-1,-1,-1):
@@ -25,7 +25,7 @@ class Solution:
                 previous_smaller[idx] = i
             stack.append(i)
 
-        print(previous_smaller)
+        # print(previous_smaller)
 
         stack = deque()
         for i in range(n):
@@ -33,7 +33,7 @@ class Solution:
                 idx = stack.pop()
                 next_great[idx] = i
             stack.append(i)
-        print(next_great)
+        # print(next_great)
 
         stack = deque()
         for i in range(n-1,-1,-1):
@@ -41,7 +41,7 @@ class Solution:
                 idx = stack.pop()
                 previous_great[idx] = i
             stack.append(i)
-        print(previous_great)
+        # print(previous_great)
 
         sum_small = 0
         sum_large = 0
@@ -49,8 +49,8 @@ class Solution:
             sum_small = sum_small + ((i - previous_smaller[i]) * (next_smaller[i] - i)) * nums[i]
             sum_large = sum_large + ((i - previous_great[i]) * (next_great[i] - i)) * nums[i]
 
-        print(sum_small)
-        print(sum_large)
+        # print(sum_small)
+        # print(sum_large)
             
         count = sum_large - sum_small
 
