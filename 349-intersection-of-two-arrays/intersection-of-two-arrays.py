@@ -17,6 +17,7 @@ class Solution:
             elif nums1[i] < nums2[j]:
                 i = i + 1
             else:
+                
                 answer.append(nums1[i])
                 i = i + 1
                 j = j + 1
