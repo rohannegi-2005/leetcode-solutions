@@ -9,10 +9,8 @@ class Solution:
              
             while stack and nums[stack[-1]] < nums[i]:
                 stack.pop()
-            if not stack :
-                stack.append(i)
-            elif nums[stack[-1]] >= nums[i] :
-                stack.append(i)
+                
+            stack.append(i)
  
             if i - j + 1 >= k:
                 answer.append(nums[stack[0]])
