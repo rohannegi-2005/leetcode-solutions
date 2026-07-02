@@ -7,9 +7,9 @@ class Solution:
         j = 0
         for i in range(n):
              
-            while stack and nums[stack[-1]] < nums[i]:
+            while stack and nums[stack[-1]] <= nums[i]:
                 stack.pop()
-                
+
             stack.append(i)
  
             if i - j + 1 >= k:
@@ -17,8 +17,6 @@ class Solution:
                 j = j + 1
                 if stack[0] < j:
                     stack.popleft()
-            # print(stack)
-            # print(answer)
                 
 
         return answer
