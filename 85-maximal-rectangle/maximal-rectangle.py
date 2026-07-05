@@ -53,7 +53,7 @@ class Solution:
 
         # Final Max Area after comparing all the max area per row 
         max_area = 0
-        for i in range(row):
+        for i in range(row-1,-1,-1):
             max_area_perrow = calculate_area(matrix[i])
             max_area = max(max_area ,max_area_perrow)
 
