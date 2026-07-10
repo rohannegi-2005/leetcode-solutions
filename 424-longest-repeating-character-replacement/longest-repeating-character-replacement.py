@@ -12,7 +12,7 @@ class Solution:
             maxFreq = max(maxFreq, count[index])
 
             # check if window is invalid
-            while (right - left + 1) - maxFreq > k:
+            if (right - left + 1) - maxFreq > k:
                 count[ord(s[left]) - ord('A')] -= 1
                 left += 1
 
