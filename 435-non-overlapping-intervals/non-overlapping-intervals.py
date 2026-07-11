@@ -1,7 +1,7 @@
 class Solution:
     def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
         intervals = sorted(intervals, key=lambda x: x[1])
-        print(intervals)
+        # print(intervals)
         n = len(intervals)
         count = 0
         store = intervals[0][1]
