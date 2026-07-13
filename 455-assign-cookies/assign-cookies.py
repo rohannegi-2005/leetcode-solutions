@@ -5,8 +5,8 @@ class Solution:
         g.sort()
         s.sort()
 
-        print(f"g:{g}")
-        print(f"s:{s}")
+        # print(f"g:{g}")
+        # print(f"s:{s}")
 
         n = len(g)
         m = len(s)
