@@ -20,10 +20,5 @@ class Solution:
 
             return dp[index]
 
-
-        
-        zero = costs(0)
-        one = costs(1)
-
-        return min(one, zero)
+        return min(costs(0), costs(1))
         
