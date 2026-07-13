@@ -1,4 +1,3 @@
-import math
 class Solution:
     def selfDividingNumbers(self, left: int, right: int) -> List[int]:
         arr = []
@@ -17,6 +16,3 @@ class Solution:
                 arr.append(number)
 
         return arr
-
-                
-  
