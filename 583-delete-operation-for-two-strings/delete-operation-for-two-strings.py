@@ -21,7 +21,6 @@ class Solution:
 
 
         store = solve(0, 0)
-        # return store
         add = n - store
         remove = m - store
 
