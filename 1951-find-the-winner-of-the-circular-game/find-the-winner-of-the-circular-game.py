@@ -4,7 +4,7 @@ class Solution:
         for i in range(1,n+1):
             arr.append(i)
         
-        print(f"initial array:{arr}")
+        # print(f"initial array:{arr}")
 
         i = 0
         while n > 1:
