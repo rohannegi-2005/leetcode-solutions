@@ -4,7 +4,6 @@ class Solution:
         dictionary = {}
         n = len(s)
         mid = n // 2
-        print(mid)
 
         start = 0
         end = n - 1
