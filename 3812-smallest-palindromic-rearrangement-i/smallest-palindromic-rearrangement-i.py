@@ -54,11 +54,9 @@ class Solution:
         for ch in sorted(freq.keys()):
             count = freq[ch]
 
-            # Place the middle character (if odd frequency)
             if count % 2 == 1:
                 ans[mid] = ch
 
-            # Place pairs from both ends
             pairs = count // 2
             for _ in range(pairs):
                 ans[start] = ch
